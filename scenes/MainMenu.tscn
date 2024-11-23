@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://cxtij3h6p10o0"]
+
+[ext_resource type="Texture2D" uid="uid://daldlsgdutlmo" path="res://assets/bgMenu.png" id="1_d7aot"]
+[ext_resource type="Script" path="res://scripts/control_menu.gd" id="2_oup8k"]
+
+[node name="Main Menu" type="Node2D"]
+
+[node name="controlMenu" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_oup8k")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(400, 300)
+texture = ExtResource("1_d7aot")

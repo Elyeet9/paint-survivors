@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://bws50m1e84cof"]
+
+[ext_resource type="Script" path="res://scripts/control_menu.gd" id="1_dksmb"]
+[ext_resource type="Texture2D" uid="uid://d3u26cpx670ly" path="res://assets/bgGameOver.png" id="2_23qhg"]
+
+[node name="GameOver" type="Node2D"]
+
+[node name="controlGameOver" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_dksmb")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_23qhg")
+centered = false
